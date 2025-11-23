@@ -22,6 +22,46 @@ python -m pip install pygame
 python main.py
 ```
 
+## Team Workflow
+
+To keep the project organized, everyone should work on their own branch and only merge into `main` via pull requests 
+
+### 1. Make sure your local `main` is up-to-date
+```bash
+git checkout main
+git pull origin main
+```
+
+### 2. Create a new branch for your feature
+Use a descriptive branch name instead of the placeholder `feature-name`:
+```bash
+git checkout -b <feature-name>
+```
+
+### 3. Work on your branch
+- Make changes locally
+- Commit changes
+- Push the branch to GitHub
+```bash
+git add .
+git commit -m " ..."
+git push -u origin <feature-name>
+```
+
+### 4. Create a pull request
+- Go to GitHub and open a PR from your branch → main.
+- Add a short description of your changes
+- Wait for review/approval before merging
+
+### 5. Merge PR into 'main'
+- Merge PR
+- Pull updated main branch locally
+```bash
+git checkout main
+git pull origin main
+```
+
+
 ## Folder Structure
 
 ```
