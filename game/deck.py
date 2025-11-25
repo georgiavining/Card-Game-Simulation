@@ -2,7 +2,7 @@ import pygame
 import random
 from game.card import Card
 from config import colours, numbers, deck_x, deck_y, card_width, card_height
-from ui.sprites import ImageBasedObject
+from ui.visual_objects import ImageBasedObject
 
 class Deck(ImageBasedObject):
     def __init__(self, x=deck_x, y=deck_y):
