@@ -152,7 +152,7 @@ class RandomStrategy(Strategy):
 
         random.shuffle(once_actions)
 
-        return once_actions + repeat_actions
+        return once_actions 
     
 
 #class BetterStrategy(Strategy):
