@@ -4,7 +4,6 @@ from game.player import Player, ComputerPlayer
 from game.rules import Rules
 from game.turn_manager import TurnManager
 from config import screen_height,screen_width
-from ui.visual_objects import Button
 from typing import List, Optional
 from game.state import GameState
 from game.card import Card
