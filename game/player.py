@@ -7,10 +7,14 @@ from abc import ABC, abstractmethod
 
 
 class Player:
-    def __init__(self, name, strategy= None):
+    def __init__(self, name):
         self.name = name
         self.hand = Hand()
         self.hidden_draw_pile = []
+
+class ComputerPlayer(Player):
+    def __init__(self, name, strategy= None): 
+        super().__init__(name)
         self.strategy = strategy or RandomStrategy()
 
     def draw_cards(self, deck):
@@ -49,10 +53,6 @@ class Player:
         actions = self.strategy.take_turn(self, state,deck)
         for action in actions:
             action()  
-
-class ComputerPlayer(Player):
-    def __init__(self, name, strategy= None): 
-        super().__init__(name, strategy)
 
     
 class Strategy(ABC):
