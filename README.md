@@ -7,7 +7,7 @@ A card game built with Python and Pygame, featuring a full game engine, AI oppon
 ## Folder Structure
 
 ```
-ard-Game-Simulation/
+Card-Game-Simulation/
 ├── main.py              # Entry point — run this to start the game
 ├── core/                # Core game logic
 │   ├── card.py
@@ -22,10 +22,10 @@ ard-Game-Simulation/
 │   ├── menu.py
 │   ├── renderer.py
 │   └── screen.py
-├── ai/                  # AI opponent strategies
-│   ├── strat1.py
-│   └── strat2.py
-└──
+└── ai/                  # AI opponent strategies
+    ├── strat1.py
+    └── strat2.py
+
 
 ```
 
