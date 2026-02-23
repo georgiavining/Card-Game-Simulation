@@ -7,24 +7,26 @@ A card game built with Python and Pygame, featuring a full game engine, AI oppon
 ## Folder Structure
 
 ```
-Card-Game-Simulation/
+ard-Game-Simulation/
 ├── main.py              # Entry point — run this to start the game
 ├── core/                # Core game logic
 │   ├── card.py
 │   ├── deck.py
-│   ├── hand.py
+│   ├── game.py
+│   ├── groups.py
 │   ├── player.py
-│   ├── rules.py
-│   ├── turn_manager.py
-│   └── state.py
+│   └── turn.py
 ├── ui/                  # Pygame UI components
-│   ├── screen.py
-│   ├── main_screen.py
-│   ├── game_over_screen.py
-│   ├── layout.py
-│   └── visual_objects.py
-├── ai/                  # AI opponent logic
-└── assets/              # Images for cards, deck, background
+│   ├── buttons.py
+│   ├── events.py
+│   ├── menu.py
+│   ├── renderer.py
+│   └── screen.py
+├── ai/                  # AI opponent strategies
+│   ├── strat1.py
+│   └── strat2.py
+└──
+
 ```
 
 ---
